@@ -1,0 +1,40 @@
+.root{
+    -fx-background-color: linear-gradient(#c3361d,fuchsia);
+}
+
+@font-face{
+    font-family:GoodDog;
+    src:url("/Fonts/GoodDog.otf");
+}
+
+
+#on,#off{
+
+    -fx-font-Family:GoodDog;
+    -fx-font-size:20px;
+}
+
+#hour,#minutes{
+
+    -fx-font-Family:GoodDog;
+    -fx-font-size:17px;
+}
+#hours1,#minutes1{
+
+    -fx-font-Family:GoodDog;
+    -fx-font-size:17px;
+}
+.button{
+    -fx-font-Family:GoodDog;
+    -fx-font-size:20px;
+}
+#step2{
+    -fx-font-family: GoodDog;
+    -fx-font-size:30px;
+    -fx-text-fill: derive(#333333, 10%);
+}
+.label{
+    -fx-font-family: GoodDog;
+    -fx-font-size:20px;
+    -fx-text-fill:#1f1f1f;
+}

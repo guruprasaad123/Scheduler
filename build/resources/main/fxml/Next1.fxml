@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="360.0" style="-fx-background-color: linear-gradient(#c3361d,fuchsia);" stylesheets="@Next.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sample.Next">
+ 
+ <children>
+      <Label layoutX="79.0" text="Now ,You can Schedule Wifi" AnchorPane.leftAnchor="79.0" />      <Label fx:id="scheduled" layoutX="110.0" layoutY="130.0" text="Scheduled to turn off" />
+      <Label layoutX="5.0" layoutY="202.0" text="Start Time:" />
+      <Label layoutX="6.0" layoutY="283.0" text="End Time :" />
+      <JFXButton defaultButton="true" layoutX="129.0" layoutY="354.0" mnemonicParsing="false" onAction="#schedule" text="Schedule" textAlignment="CENTER">
+          <graphic>
+              <ImageView>
+                  <image>
+                      <Image url="@reminders-24.png" />
+                  </image>
+              </ImageView>
+          </graphic>
+      </JFXButton>
+      <JFXButton layoutX="113.0" layoutY="436.0" mnemonicParsing="false" onAction="#gotoHome" text="Back to Home">
+      <graphic>
+          <ImageView>
+             <image>
+                 <Image url="@home-24.png" />
+             </image>
+          </ImageView>
+      </graphic>
+      </JFXButton>
+      <Label layoutX="195.0" layoutY="247.0" text="to" />
+      <JFXDatePicker fx:id="start" defaultColor="#b2dbee" layoutX="138.0" layoutY="206.0" showTime="true" />
+      <JFXDatePicker fx:id="end" defaultColor="#b2dbee" layoutX="139.0" layoutY="283.0" showTime="true" />
+      <JFXToolbar layoutX="2.0" layoutY="44.0" prefHeight="51.0" prefWidth="360.0">
+         <right>
+            <JFXToggleButton fx:id="wifi" onAction="#check" text="wifi" BorderPane.alignment="CENTER">
+               <graphic>
+                  <Icon content="HELP_OUTLINE" />
+               </graphic>
+      		 </JFXToggleButton>
+         </right>
+         <center>
+            <Label prefHeight="28.0" prefWidth="232.0" text="Action need to be performed:" BorderPane.alignment="CENTER" />
+         </center>
+      </JFXToolbar>
+   </children>
+  
+</AnchorPane>

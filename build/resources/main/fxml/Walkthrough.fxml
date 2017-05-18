@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<View prefHeight="620.0" prefWidth="360.0" stylesheets="@Walkthrough.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sample.Walkthrough">
+   <center>
+      <ImageView fitHeight="254.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="/icons/time.gif" />
+         </image>
+      </ImageView>
+   </center>
+   <top>
+      <Label stylesheets="@Walkthrough.css" text="A QUICK WALK THROUGH" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <JFXButton fx:id="skip" onAction="#skip" prefHeight="25.0" prefWidth="359.0" text="SKIP THE WALK THROGH" BorderPane.alignment="CENTER" />
+   </bottom>
+</View>

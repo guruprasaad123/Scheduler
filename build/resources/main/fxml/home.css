@@ -1,0 +1,29 @@
+@font-face{
+    font-family:GoodDog;
+    src:url("GoodDog.otf");
+}
+
+.root{
+    -fx-background-color: linear-gradient(#c3361d,fuchsia);
+}
+#borderpane{
+
+    -fx-border-color: pink;
+}
+
+/*
+#anchorpane{
+
+    -fx-border-color: #051102;
+}*/
+.button{
+    -fx-background-color:whitesmoke;
+    -fx-border-color:#c3361d;
+    -fx-font-Family:GoodDog;
+    -fx-font-size:20px;
+}
+.label{
+    -fx-font-Family:GoodDog;
+    -fx-font-size:25px;
+   -fx-text-fill:#1f1f1f;
+}

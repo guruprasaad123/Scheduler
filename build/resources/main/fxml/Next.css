@@ -1,0 +1,62 @@
+.root{
+    -fx-background-color: linear-gradient(#c3361d,fuchsia);
+}
+
+@font-face{
+    font-family:GoodDog;
+    src:url("GoodDog.otf");
+}
+.combo-box{
+    -fx-font-Family:GoodDog;
+    -fx-font-size:18px;
+    -fx-padding: 0px 0px 0px 0px;
+}
+toggle-button{
+
+    -fx-font-Family:GoodDog;
+    -fx-font-size:20px;
+}
+#ON{
+	
+	-fx-background-color:#41baea;
+     -fx-base:#41baea;
+    -fx-font-Family:GoodDog;
+    -fx-font-size:20px;
+}
+#OFF{
+	-fx-background-color:#c60000;
+ -fx-base:#c60000;
+    -fx-font-Family:GoodDog;
+    -fx-font-size:20px;
+}
+
+#hour,#minutes{
+
+    -fx-font-Family:GoodDog;
+    -fx-font-size:17px;
+}
+#hours1,#minutes1{
+
+    -fx-font-Family:GoodDog;
+    -fx-font-size:17px;
+}
+.button{
+    -fx-background-color:whitesmoke;
+    -fx-font-Family:GoodDog;
+    -fx-font-size:20px;
+}
+#step2{
+    -fx-font-family: GoodDog;
+    -fx-font-size:30px;
+    -fx-text-fill: derive(#333333, 10%);
+}
+.label{
+    -fx-font-family: GoodDog;
+    -fx-font-size:25px;
+    -fx-text-fill:#1f1f1f;
+}
+
+.jfx-toggle-button{
+-fx-font-family:GoodDOg;
+-fx-font-size:25px;
+}
